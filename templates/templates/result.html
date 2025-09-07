@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transcript Ready</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        textarea { width: 80%; height: 150px; margin: 20px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Transcript Tayyar Hai!</h1>
+    <textarea>{{ transcript }}</textarea>
+    <br>
+    <form action="/tts" method="post">
+        <input type="hidden" name="text" value="{{ transcript }}">
+        <input type="submit" value="Audio Banayo (Brio)">
+    </form>
+    <br>
+    <a href="/">Wapas Jaao</a>
+</body>
+</html>
